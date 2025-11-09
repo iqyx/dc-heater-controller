@@ -1,0 +1,24 @@
+# KiCad backup files
+pcb/**/*.bak
+pcb/**/*.kicad_pcb-bak
+pcb/**/*.sch-bak
+pcb/**/*-backups
+
+pcb/**/gerbers
+out/gerbers
+vendor/
+*.o
+*.d
+*.elf
+*_autosave*.kicad_pcb
+*.map
+testing/
+
+# C++ module cache
+gcm.cache
+
+# sphinx build directories
+build/
+
+# KiCad lock files
+pcb/**/*.lck
