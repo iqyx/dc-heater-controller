@@ -11,33 +11,28 @@
 		(company "(c) 2024, Marek Koza <qyx@krtko.org>")
 	)
 	(lib_symbols
-		(symbol "Device:C_Small"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -58,7 +53,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor, small symbol"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,7 +62,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "capacitor cap"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,7 +79,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -85,13 +88,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_Small_0_1"
+			(symbol "Conn_01x04_Socket_1_1"
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -100,22 +103,92 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "C_Small_1_1"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -131,9 +204,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -141,6 +214,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -681,31 +790,35 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "drivers:GATE_DRV_IN_OUT_OUT"
+		(symbol "passives:d_tvs_bidi"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 10.16 0)
+			(property "Reference" "TVS"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "GATE_DRV_IN_OUT_OUT"
-				(at 0 -10.16 0)
+			(property "Value" "d_tvs_bidi"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-				(at 0 -12.7 0)
+			(property "Footprint" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -731,42 +844,49 @@
 					(hide yes)
 				)
 			)
-			(symbol "GATE_DRV_IN_OUT_OUT_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
+			(symbol "d_tvs_bidi_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.254 -1.016)
+					)
 					(stroke
 						(width 0)
 						(type solid)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 			)
-			(symbol "GATE_DRV_IN_OUT_OUT_1_1"
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			(symbol "d_tvs_bidi_1_1"
+				(polyline
+					(pts
+						(xy -1.524 -1.016) (xy 0 0) (xy -1.524 1.016) (xy -1.524 -1.016)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN"
+				(polyline
+					(pts
+						(xy 1.524 1.016) (xy 0 0) (xy 1.524 -1.016) (xy 1.524 1.016)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.016)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -781,10 +901,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "GND"
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.016)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -792,168 +912,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(hide yes)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+12V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1078,90 +1036,140 @@
 		)
 	)
 	(junction
-		(at 53.34 50.8)
+		(at 152.4 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "018ef808-2212-435f-9419-d37a8896e559")
+		(uuid "02deee63-c7aa-4c3c-b076-f04b54ce60c4")
 	)
 	(junction
-		(at 119.38 129.54)
+		(at 152.4 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23923ef3-ff6a-498b-b13a-7c953df9f801")
+	)
+	(junction
+		(at 129.54 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fc168f6-a08c-4805-9b4f-24a2864de718")
 	)
 	(junction
-		(at 50.8 38.1)
+		(at 152.4 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5761f979-753f-4ddd-bb1d-80c209cef062")
-	)
-	(junction
-		(at 119.38 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95d29dd0-aa58-415f-90ed-857bb8c03a1c")
-	)
-	(junction
-		(at 93.98 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "96896e9b-3c52-43a6-b627-c74221fdc84c")
-	)
-	(junction
-		(at 53.34 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6fc4fec-03cf-458e-9800-1e923abe9f51")
-	)
-	(junction
-		(at 53.34 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8b258f1-f48f-4d6c-b6ea-92c55917d9d5")
-	)
-	(junction
-		(at 119.38 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e52d88ab-9db3-43dc-b98d-9b43f9a02c13")
-	)
-	(junction
-		(at 50.8 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eafc7fcb-8151-4c6d-849a-e1e0d0891743")
-	)
-	(junction
-		(at 93.98 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f13e97ef-9876-4a28-ac40-6010b06a38d2")
+		(uuid "373673ab-db02-4f1f-8251-caa9674325a6")
 	)
 	(junction
 		(at 93.98 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f4d1fa1e-7a2f-4460-a279-a8434ebabcba")
+		(uuid "877dfb07-5278-46e4-a2d6-bebc36ce9913")
 	)
 	(junction
-		(at 50.8 81.28)
+		(at 129.54 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fe30d40c-a913-4ae4-9f35-cc8126ebff60")
+		(uuid "95d29dd0-aa58-415f-90ed-857bb8c03a1c")
+	)
+	(junction
+		(at 104.14 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96896e9b-3c52-43a6-b627-c74221fdc84c")
+	)
+	(junction
+		(at 94.0089 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d2bde70-1cfa-4559-a46e-bf5f2f666a12")
+	)
+	(junction
+		(at 93.98 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de1f11ad-8343-4608-96ee-1ba3eee38ca0")
+	)
+	(junction
+		(at 129.54 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e52d88ab-9db3-43dc-b98d-9b43f9a02c13")
+	)
+	(junction
+		(at 104.14 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f13e97ef-9876-4a28-ac40-6010b06a38d2")
+	)
+	(junction
+		(at 104.14 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4d1fa1e-7a2f-4460-a279-a8434ebabcba")
 	)
 	(wire
 		(pts
-			(xy 63.5 144.78) (xy 63.5 147.32)
+			(xy 93.98 91.44) (xy 93.98 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0149e502-d605-4758-8398-0ccae47b8d51")
+		(uuid "006c5e77-2926-4bbe-a658-a8bb3ffed362")
 	)
 	(wire
 		(pts
-			(xy 111.76 142.24) (xy 93.98 142.24)
+			(xy 86.36 50.8) (xy 71.12 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04610ca9-7c61-4893-97ab-16aacea2f21f")
+	)
+	(wire
+		(pts
+			(xy 93.98 48.26) (xy 104.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09841ac8-f48f-4747-abf4-94c8107d9c06")
+	)
+	(wire
+		(pts
+			(xy 152.4 60.96) (xy 152.4 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e89fbd4-3d6b-4a01-8049-17d1ab4a130c")
+	)
+	(wire
+		(pts
+			(xy 83.82 134.62) (xy 94.0089 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17076de4-58d6-4c35-a573-83132686ce96")
+	)
+	(wire
+		(pts
+			(xy 152.4 147.32) (xy 152.4 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1730d37d-f579-4e7b-a32b-7c6e181472b0")
+	)
+	(wire
+		(pts
+			(xy 121.92 142.24) (xy 104.14 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1171,37 +1179,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 43.18) (xy 124.46 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bdae2c7-4c54-4f6d-88d1-7feb2781af37")
-	)
-	(wire
-		(pts
-			(xy 63.5 144.78) (xy 66.04 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "213f4f25-e4e5-4f65-8405-db40dcd55ace")
-	)
-	(wire
-		(pts
-			(xy 53.34 101.6) (xy 53.34 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22da49bf-4166-415c-bd57-15a52182bce7")
-	)
-	(wire
-		(pts
-			(xy 119.38 43.18) (xy 119.38 50.8)
+			(xy 129.54 43.18) (xy 129.54 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1211,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 96.52) (xy 101.6 104.14)
+			(xy 111.76 96.52) (xy 111.76 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1221,47 +1199,17 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 81.28) (xy 50.8 83.82)
+			(xy 152.4 129.54) (xy 157.48 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b2745c5-53b8-4aad-808e-c9044015db6f")
+		(uuid "28c75db3-2c94-4b1e-997b-54f82ee66e06")
 	)
 	(wire
 		(pts
-			(xy 86.36 134.62) (xy 93.98 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "333eaac8-3ac4-4068-8bd1-3dc07808f050")
-	)
-	(wire
-		(pts
-			(xy 53.34 58.42) (xy 53.34 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33d0dcb8-6462-4842-8fb2-5c8bae01355f")
-	)
-	(wire
-		(pts
-			(xy 63.5 81.28) (xy 63.5 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34a35da9-197f-4ddb-83a5-ecd745884f5d")
-	)
-	(wire
-		(pts
-			(xy 101.6 86.36) (xy 119.38 86.36)
+			(xy 111.76 86.36) (xy 129.54 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1271,57 +1219,37 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 124.46) (xy 63.5 124.46)
+			(xy 152.4 129.54) (xy 152.4 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3936e4ba-00e1-45cd-8209-5480d7b206b8")
+		(uuid "40917087-bc7d-4605-a7c5-f1dad6f4bfdf")
 	)
 	(wire
 		(pts
-			(xy 119.38 129.54) (xy 124.46 129.54)
+			(xy 83.82 53.34) (xy 71.12 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39c01bed-a59f-4c41-b884-318e3b61202c")
+		(uuid "4791932f-0460-47e5-916c-09893402746f")
 	)
 	(wire
 		(pts
-			(xy 53.34 177.8) (xy 53.34 180.34)
+			(xy 94.0089 134.62) (xy 104.14 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3acd9ade-715e-47ff-87b5-2dd6782c2196")
+		(uuid "484a8bba-33bb-4b97-952d-fdd93ceeef4d")
 	)
 	(wire
 		(pts
-			(xy 63.5 124.46) (xy 63.5 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4217d746-e8a3-4bc6-85a6-70a87a187662")
-	)
-	(wire
-		(pts
-			(xy 63.5 38.1) (xy 63.5 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4864bb07-2cdb-43a2-835d-603aecb108a4")
-	)
-	(wire
-		(pts
-			(xy 111.76 99.06) (xy 93.98 99.06)
+			(xy 121.92 99.06) (xy 104.14 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1331,7 +1259,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 86.36) (xy 124.46 86.36)
+			(xy 93.98 91.44) (xy 104.14 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510f665d-a9b4-4b5d-a129-64db6e308709")
+	)
+	(wire
+		(pts
+			(xy 129.54 86.36) (xy 152.4 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1341,37 +1279,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 134.62) (xy 66.04 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58551895-b910-4850-a007-5bfec21ca5ac")
-	)
-	(wire
-		(pts
-			(xy 63.5 101.6) (xy 66.04 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "595f4800-8d56-48ff-a089-a19ed759b197")
-	)
-	(wire
-		(pts
-			(xy 45.72 50.8) (xy 53.34 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ab91ab9-c3d3-49f2-8dad-3814ce206189")
-	)
-	(wire
-		(pts
-			(xy 93.98 142.24) (xy 93.98 134.62)
+			(xy 104.14 142.24) (xy 104.14 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1381,47 +1289,17 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 38.1) (xy 63.5 38.1)
+			(xy 86.36 91.44) (xy 86.36 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cce3c83-2d8b-4c69-8737-764b2a8d0327")
+		(uuid "5fba0a4c-7002-40a5-aab0-57881aada695")
 	)
 	(wire
 		(pts
-			(xy 53.34 137.16) (xy 53.34 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c476d88-66da-47fc-b370-e6d8017a7a5f")
-	)
-	(wire
-		(pts
-			(xy 50.8 38.1) (xy 50.8 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73e86431-0052-4154-aa85-3108edb8151a")
-	)
-	(wire
-		(pts
-			(xy 63.5 48.26) (xy 66.04 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c1f8881-6659-4a44-87a4-29b2cff5cf6d")
-	)
-	(wire
-		(pts
-			(xy 101.6 139.7) (xy 101.6 147.32)
+			(xy 111.76 139.7) (xy 111.76 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1431,7 +1309,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 53.34) (xy 101.6 60.96)
+			(xy 111.76 53.34) (xy 111.76 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1441,7 +1319,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 86.36) (xy 119.38 93.98)
+			(xy 129.54 86.36) (xy 129.54 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1451,17 +1329,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 93.98) (xy 53.34 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89a28bf1-81f6-4c74-b467-f74e1753065c")
-	)
-	(wire
-		(pts
-			(xy 119.38 129.54) (xy 119.38 137.16)
+			(xy 129.54 129.54) (xy 129.54 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1471,27 +1339,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 137.16) (xy 53.34 137.16)
+			(xy 93.98 48.26) (xy 93.98 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96a48bf6-f39e-44a1-ac81-26c4ad8d3a5d")
+		(uuid "970f3a98-008d-4734-b719-59e0847edb2e")
 	)
 	(wire
 		(pts
-			(xy 63.5 101.6) (xy 63.5 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96f21241-95c2-4930-b75d-64d25e1dec81")
-	)
-	(wire
-		(pts
-			(xy 93.98 99.06) (xy 93.98 91.44)
+			(xy 104.14 99.06) (xy 104.14 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1501,27 +1359,47 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 50.8) (xy 66.04 50.8)
+			(xy 71.12 55.88) (xy 73.66 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6234173-1ee9-4bb6-a954-dd3418f1d67f")
+		(uuid "a870d700-90df-48cd-89fa-efee8faa31d5")
 	)
 	(wire
 		(pts
-			(xy 50.8 81.28) (xy 63.5 81.28)
+			(xy 152.4 43.18) (xy 152.4 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a92722cc-9d9c-483f-94a7-85bc66fc5d6c")
+		(uuid "ab18aeca-bc24-4524-8e62-e1e4099f78b3")
 	)
 	(wire
 		(pts
-			(xy 101.6 43.18) (xy 119.38 43.18)
+			(xy 73.66 55.88) (xy 73.66 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab31877e-b0ed-4e00-8fd5-2b18a1f3eb9a")
+	)
+	(wire
+		(pts
+			(xy 152.4 86.36) (xy 152.4 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af838c74-cdd3-4289-bd61-90f7f5dd6504")
+	)
+	(wire
+		(pts
+			(xy 111.76 43.18) (xy 129.54 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1531,17 +1409,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 58.42) (xy 66.04 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5376161-e72d-4e8c-9ecb-364c0aaf1388")
-	)
-	(wire
-		(pts
-			(xy 101.6 129.54) (xy 119.38 129.54)
+			(xy 111.76 129.54) (xy 129.54 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1551,7 +1419,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 55.88) (xy 93.98 55.88)
+			(xy 152.4 43.18) (xy 157.48 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b886c6fc-f9e6-4480-a91a-767536ffb19a")
+	)
+	(wire
+		(pts
+			(xy 121.92 55.88) (xy 104.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1561,13 +1439,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 50.8) (xy 53.34 53.34)
+			(xy 83.82 134.62) (xy 83.82 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c0498bc0-fe3b-4dc8-8b6c-0fa994cb5a92")
+		(uuid "bbaab633-ef8b-4ac7-9771-9febd05f1267")
+	)
+	(wire
+		(pts
+			(xy 152.4 104.14) (xy 152.4 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc289f2f-2eb0-47b0-89c5-c6eb98860a25")
 	)
 	(wire
 		(pts
@@ -1581,67 +1469,47 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 137.16) (xy 66.04 137.16)
+			(xy 129.54 43.18) (xy 152.4 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7b14f18-24ea-43e7-8753-bcfb1b411ee4")
+		(uuid "cd3ffa95-aec9-4d6c-a06b-a1758142bb43")
 	)
 	(wire
 		(pts
-			(xy 53.34 144.78) (xy 53.34 147.32)
+			(xy 94.0089 134.62) (xy 94.0089 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7bb9e1d-c42a-4dd0-b180-09f7dc05764b")
+		(uuid "d7ae952d-d65e-433b-b990-294e47d6358a")
 	)
 	(wire
 		(pts
-			(xy 50.8 124.46) (xy 50.8 127)
+			(xy 71.12 48.26) (xy 93.98 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e993ac14-eab7-422c-a6da-bfc4c28fd093")
+		(uuid "e6f40330-9c82-4fdc-80c2-48a2b1489750")
 	)
 	(wire
 		(pts
-			(xy 63.5 58.42) (xy 63.5 60.96)
+			(xy 152.4 86.36) (xy 157.48 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef96d0f7-2a2f-47b3-9e81-9b6b7a479a99")
+		(uuid "f0bd7557-0a2f-46c4-b145-9e38e5c08978")
 	)
 	(wire
 		(pts
-			(xy 53.34 93.98) (xy 66.04 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f74d3775-c788-46d3-a83d-0bfd34434e3f")
-	)
-	(wire
-		(pts
-			(xy 63.5 91.44) (xy 66.04 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f83417c9-7353-4699-b4d2-adde3db58183")
-	)
-	(wire
-		(pts
-			(xy 93.98 55.88) (xy 93.98 48.26)
+			(xy 104.14 55.88) (xy 104.14 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1651,49 +1519,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 93.98) (xy 53.34 93.98)
+			(xy 129.54 129.54) (xy 152.4 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa148c7d-3a25-4a7d-9f56-fae2df478ca4")
-	)
-	(wire
-		(pts
-			(xy 86.36 48.26) (xy 93.98 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fee2d75f-5327-4277-9e72-7006dab6508a")
-	)
-	(global_label "DRV1"
-		(shape input)
-		(at 45.72 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "170e0906-9865-4eac-a6b3-93efa342e83b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.5509 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "ff05d761-2844-48ff-850d-910ad9788e78")
 	)
 	(global_label "HEATER2"
 		(shape input)
-		(at 124.46 86.36 0)
+		(at 157.48 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1703,7 +1539,7 @@
 		)
 		(uuid "1f69c10d-6c77-4d5e-8baf-8486d72ec694")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.9552 86.36 0)
+			(at 167.9752 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1713,31 +1549,9 @@
 			)
 		)
 	)
-	(global_label "DRV1"
-		(shape input)
-		(at 45.72 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "599298e3-cb7c-4101-af87-ce9648bb0ed8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.5509 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HEATER3"
 		(shape input)
-		(at 124.46 129.54 0)
+		(at 157.48 129.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1747,7 +1561,7 @@
 		)
 		(uuid "64f2b416-3b02-4da6-acab-cce22cc58ede")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.9552 129.54 0)
+			(at 167.9752 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,31 +1571,9 @@
 			)
 		)
 	)
-	(global_label "DRV1"
-		(shape input)
-		(at 45.72 93.98 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "907a6307-2a38-45c2-958e-0743e95ea48a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.5509 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HEATER1"
 		(shape input)
-		(at 124.46 43.18 0)
+		(at 157.48 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1791,7 +1583,7 @@
 		)
 		(uuid "d4ab9035-4614-486e-afe9-bf23d4ec4c5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.9552 43.18 0)
+			(at 167.9752 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,7 +1595,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 116.84 142.24 0)
+		(at 127 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1811,7 +1603,7 @@
 		(dnp no)
 		(uuid "0470aa55-2039-41c1-8a24-a1670bab169c")
 		(property "Reference" "Q14"
-			(at 121.92 142.24 0)
+			(at 132.08 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1820,7 +1612,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 121.92 144.78 0)
+			(at 132.08 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,7 +1621,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 121.92 144.145 0)
+			(at 132.08 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1840,7 +1632,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 116.84 142.24 0)
+			(at 127 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1850,7 +1642,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 142.24 0)
+			(at 127 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1876,17 +1668,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 101.6 104.14 0)
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 66.04 50.8 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "08199719-45b0-4de3-916c-4f63a8753b86")
-		(property "Reference" "#PWR027"
-			(at 101.6 110.49 0)
+		(uuid "0532fc5e-4b11-44fd-bd31-5bdb5147cbb9")
+		(property "Reference" "J3"
+			(at 66.675 43.6583 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 66.675 46.0826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 66.04 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,8 +1703,66 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 101.6 107.8921 0)
+		(property "Datasheet" "~"
+			(at 66.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 66.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7c653133-bf71-4377-a000-e5867b0428a1")
+		)
+		(pin "1"
+			(uuid "5e45c19f-03ca-49ce-981a-b95e086861b2")
+		)
+		(pin "3"
+			(uuid "e8a23b85-6590-4f42-8a02-bec9b059bba4")
+		)
+		(pin "4"
+			(uuid "5681b2d2-faf0-4729-8360-5b3cab55c374")
+		)
+		(instances
+			(project ""
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 73.66 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07409d1b-f81f-4609-a04e-eb638bfa5c9e")
+		(property "Reference" "#PWR01"
+			(at 73.66 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 73.66 62.1721 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +1770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 104.14 0)
+			(at 73.66 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,7 +1779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 104.14 0)
+			(at 73.66 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1921,7 +1788,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 101.6 104.14 0)
+			(at 73.66 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1930,12 +1797,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "63dc441c-ca8b-4bec-9d00-a8163d080e71")
+			(uuid "f44d80b9-39db-4a2a-8e43-b8672ddb7de5")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR027")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 111.76 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07a64c14-1e83-47bd-b696-7f9fe21308de")
+		(property "Reference" "#PWR024"
+			(at 111.76 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 111.76 151.0721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 111.76 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55d40632-6e04-4e9e-a6b1-6e014f9c5434")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -1943,7 +1876,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 116.84 55.88 0)
+		(at 127 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1951,7 +1884,7 @@
 		(dnp no)
 		(uuid "0a2075e6-14b1-43a8-a9dd-ef2add184978")
 		(property "Reference" "Q9"
-			(at 121.92 55.88 0)
+			(at 132.08 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1960,7 +1893,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 121.92 58.42 0)
+			(at 132.08 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +1902,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 121.92 57.785 0)
+			(at 132.08 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1980,7 +1913,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 116.84 55.88 0)
+			(at 127 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1990,7 +1923,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 55.88 0)
+			(at 127 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,16 +1950,16 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 53.34 104.14 0)
+		(at 152.4 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0e30a0b3-157a-479e-ad0d-6c081f2fd989")
-		(property "Reference" "#PWR025"
-			(at 53.34 110.49 0)
+		(uuid "11cdd5df-6ac4-48d6-a5e4-21ec5cdb9f1c")
+		(property "Reference" "#PWR020"
+			(at 152.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2034,8 +1967,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 53.34 107.8921 0)
+		(property "Value" "PGND"
+			(at 152.4 64.7121 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2043,7 +1976,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 104.14 0)
+			(at 152.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2052,7 +1985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 104.14 0)
+			(at 152.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2061,7 +1994,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 53.34 104.14 0)
+			(at 152.4 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2070,46 +2003,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "9247a873-1554-4f52-8b33-e3880816d3ca")
+			(uuid "03265223-8ca8-4210-bcc5-c5502861f236")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR025")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 53.34 55.88 0)
+		(lib_id "power:GNDD")
+		(at 93.98 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1c62eb87-cb7c-4e17-9f77-2832b149c45e")
-		(property "Reference" "R16"
-			(at 54.8386 54.7116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 54.8386 57.023 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 53.34 55.88 0)
+		(fields_autoplaced yes)
+		(uuid "1984d938-42f1-43fc-8a21-7c588a427d26")
+		(property "Reference" "#PWR036"
+			(at 93.98 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2117,8 +2033,223 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 53.34 55.88 0)
+		(property "Value" "PGND"
+			(at 93.98 102.8121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f586a2c-9ab6-4533-9f10-6eff1ee0d305")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 93.98 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c48af86-1a4a-417f-8e80-f0ec473d1f86")
+		(property "Reference" "#PWR035"
+			(at 93.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 93.98 59.6321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 93.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0aefc4f-0d77-4359-a9bc-89df31471cea")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 111.76 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b0415b6-f96f-4140-acd5-809916a39e03")
+		(property "Reference" "#PWR09"
+			(at 111.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 111.76 64.7121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9563e3f6-a6de-41bf-a421-1c693b9b599a")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "passives:d_tvs_bidi")
+		(at 152.4 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e9ae711-b6c2-469b-8075-58ae51074ea0")
+		(property "Reference" "TVS3"
+			(at 154.1272 52.1716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "64V"
+			(at 154.1272 54.483 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 152.4 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2127,7 +2258,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 55.88 0)
+			(at 152.4 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2135,224 +2266,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f9f3438c-c7f1-4194-99cd-ebe3245a0ca7")
+			(uuid "62470ab2-7a32-417c-8ac5-341163ae66a5")
 		)
 		(pin "2"
-			(uuid "ff93b777-2d5f-4074-895c-ac8fcf561441")
+			(uuid "b5781497-062b-4c57-8f25-dfc194c379e0")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 119.38 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d76e0f0-2728-448c-ae41-5b54332ccefd")
-		(property "Reference" "#PWR034"
-			(at 119.38 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 119.38 151.0721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 119.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ab192f2-b407-4871-a0c1-add70cfeadfe")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "drivers:GATE_DRV_IN_OUT_OUT")
-		(at 76.2 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3113f57f-fe26-4b38-99d2-4d7201c50b64")
-		(property "Reference" "U1"
-			(at 76.2 41.7025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IX4310T"
-			(at 76.2 44.1268 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-			(at 76.2 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "97fad908-aa0f-4b58-956e-9ba1e2cb7e3f")
-		)
-		(pin "3"
-			(uuid "e7666bf0-7746-4a12-b93c-5309f178d923")
-		)
-		(pin "5"
-			(uuid "93bc766d-5798-4a53-9181-d0f36d6f5237")
-		)
-		(pin "4"
-			(uuid "b1ad190b-c177-41c4-831e-505427731f47")
-		)
-		(pin "1"
-			(uuid "6b3b0dc5-21d9-4727-98fd-6d7180a4a567")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 63.5 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3705f4d3-b8e6-446e-8038-7d39c2d310ed")
-		(property "Reference" "#PWR026"
-			(at 63.5 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 63.5 107.8921 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 63.5 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b5a40cc-4289-426e-ac43-1177bb8a9193")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR026")
+					(reference "TVS3")
 					(unit 1)
 				)
 			)
@@ -2360,7 +2282,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 99.06 134.62 0)
+		(at 109.22 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2368,7 +2290,7 @@
 		(dnp no)
 		(uuid "39a64298-a7e8-4344-ba4b-127e24ba52a2")
 		(property "Reference" "Q13"
-			(at 104.14 134.62 0)
+			(at 114.3 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2377,7 +2299,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 104.14 137.16 0)
+			(at 114.3 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,7 +2308,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 104.14 136.525 0)
+			(at 114.3 136.525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2397,7 +2319,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 99.06 134.62 0)
+			(at 109.22 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2329,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 134.62 0)
+			(at 109.22 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,140 +2355,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 53.34 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39f1321b-0e38-4fb7-817c-859729705e64")
-		(property "Reference" "#PWR035"
-			(at 53.34 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 53.34 184.0921 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 53.34 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f37d3b58-cbd2-4006-aec9-ed8a482c796c")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 53.34 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4db03fcc-982b-43de-a524-539f95d141bc")
-		(property "Reference" "H7"
-			(at 55.88 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M4"
-			(at 55.88 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_Pad_Via"
-			(at 53.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0caa19ac-22bd-42ea-8f6e-a220bd5117aa")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 99.06 48.26 0)
+		(at 109.22 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2574,7 +2364,7 @@
 		(dnp no)
 		(uuid "50ac434e-6634-409b-a7b2-5fc4843d0e10")
 		(property "Reference" "Q10"
-			(at 104.14 48.26 0)
+			(at 114.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +2373,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 104.14 50.8 0)
+			(at 114.3 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2592,7 +2382,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 104.14 50.165 0)
+			(at 114.3 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,7 +2393,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 99.06 48.26 0)
+			(at 109.22 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2613,7 +2403,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 48.26 0)
+			(at 109.22 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,34 +2429,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 101.6 60.96 0)
+		(lib_id "passives:d_tvs_bidi")
+		(at 152.4 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54a70b66-84c0-4ec1-b0cb-93cd0f484e0a")
-		(property "Reference" "#PWR020"
-			(at 101.6 67.31 0)
+		(uuid "530f387a-8d7a-4b17-94d7-b4e2370d456f")
+		(property "Reference" "TVS5"
+			(at 154.1272 138.5316 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 101.6 64.7121 0)
+		(property "Value" "64V"
+			(at 154.1272 140.843 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 101.6 60.96 0)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 152.4 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,72 +2465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 101.6 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a5ec973c-3167-4f3f-b963-fd573501dd67")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "drivers:GATE_DRV_IN_OUT_OUT")
-		(at 76.2 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5938d89b-27fb-43fb-82b3-96dd09beb659")
-		(property "Reference" "U6"
-			(at 76.2 84.8825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IX4310T"
-			(at 76.2 87.3068 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-			(at 76.2 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 96.52 0)
+			(at 152.4 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,99 +2474,23 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 96.52 0)
+			(at 152.4 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "87ab5f6d-bdf8-4b71-8557-db724fe69b27")
 		)
 		(pin "2"
-			(uuid "47107896-59de-473d-8c3d-c6030358268f")
-		)
-		(pin "3"
-			(uuid "40d29d55-ed60-443d-b822-a44cdf6b2a91")
-		)
-		(pin "5"
-			(uuid "a8bf4385-1341-4d14-ac0d-84aa6a9bd21c")
-		)
-		(pin "4"
-			(uuid "89525bc1-d094-4e28-bc09-c558b06b57d7")
-		)
-		(pin "1"
-			(uuid "08ce156e-9527-4b09-91da-5e62e576abe2")
+			(uuid "97ff2d3d-9490-4d45-b9ab-4cc5af0066c3")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 53.34 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c6f89ab-d226-4748-9dde-0b7cf2062c8c")
-		(property "Reference" "#PWR031"
-			(at 53.34 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 53.34 151.0721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 53.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "557706a7-bed2-4422-94f1-265c25995f9d")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR031")
+					(reference "TVS5")
 					(unit 1)
 				)
 			)
@@ -2849,15 +2498,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 53.34 99.06 0)
+		(at 93.98 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d05cdc8-4ea0-403c-858f-dc771d6ab615")
-		(property "Reference" "R17"
-			(at 54.8386 97.8916 0)
+		(uuid "5aca444e-c09f-4370-9c03-0eb4e6d1cace")
+		(property "Reference" "R18"
+			(at 95.4786 95.3516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2866,7 +2515,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 54.8386 100.203 0)
+			(at 95.4786 97.663 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2875,7 +2524,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 53.34 99.06 0)
+			(at 93.98 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2884,7 +2533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 99.06 0)
+			(at 93.98 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2893,7 +2542,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 99.06 0)
+			(at 93.98 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2901,15 +2550,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f7c466b-ace7-4401-85e4-fb1c189e4b73")
+			(uuid "e5b3be5e-bdf3-4dd1-8e24-a1711c62d2e1")
 		)
 		(pin "2"
-			(uuid "192acb4f-e14f-4ed8-85ba-fe9c496b1fb1")
+			(uuid "02bbdc20-4c2e-488f-a983-b7bb2cc9e94b")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -2917,7 +2566,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 99.06 91.44 0)
+		(at 109.22 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2925,7 +2574,7 @@
 		(dnp no)
 		(uuid "5fad55e0-705a-4998-86b6-c907449a1598")
 		(property "Reference" "Q11"
-			(at 104.14 91.44 0)
+			(at 114.3 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2934,7 +2583,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 104.14 93.98 0)
+			(at 114.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2943,7 +2592,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 104.14 93.345 0)
+			(at 114.3 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +2603,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 99.06 91.44 0)
+			(at 109.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2964,7 +2613,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 91.44 0)
+			(at 109.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,16 +2640,16 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 119.38 104.14 0)
+		(at 94.0089 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ff18263-1944-4fd2-bfc4-e364ea5f1304")
-		(property "Reference" "#PWR028"
-			(at 119.38 110.49 0)
+		(uuid "63f337c2-e0cd-46f2-b49e-135c98bd36dc")
+		(property "Reference" "#PWR037"
+			(at 94.0089 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,8 +2657,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 119.38 107.8921 0)
+		(property "Value" "PGND"
+			(at 94.0089 145.9921 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +2666,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 104.14 0)
+			(at 94.0089 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,7 +2675,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 104.14 0)
+			(at 94.0089 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3035,7 +2684,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 119.38 104.14 0)
+			(at 94.0089 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3044,12 +2693,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e5c2eb6-4c8b-491c-9f79-e67bcc00e64b")
+			(uuid "b96aba78-b664-4db7-9f5e-f87044b29512")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR028")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -3057,16 +2706,16 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 50.8 132.08 0)
+		(at 129.54 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "787d3034-34d8-42ee-8c65-d58a5635cc29")
-		(property "Reference" "#PWR030"
-			(at 50.8 138.43 0)
+		(uuid "74b6c385-556d-4ad6-89a9-ecbf19e03d24")
+		(property "Reference" "#PWR017"
+			(at 129.54 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3074,8 +2723,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 50.8 135.8321 0)
+		(property "Value" "PGND"
+			(at 129.54 64.7121 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3083,7 +2732,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 132.08 0)
+			(at 129.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3092,7 +2741,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 132.08 0)
+			(at 129.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3101,7 +2750,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 50.8 132.08 0)
+			(at 129.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3110,45 +2759,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "f4025920-c983-45d4-bf83-b3ccebf4ab53")
+			(uuid "63c25147-09d4-48f4-a17e-d41c372f2b40")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR030")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "drivers:GATE_DRV_IN_OUT_OUT")
-		(at 76.2 139.7 0)
+		(lib_id "power:GNDD")
+		(at 129.54 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7f73bfed-8677-4d76-83c7-5abb413835bc")
-		(property "Reference" "U7"
-			(at 76.2 128.0625 0)
+		(uuid "83a98964-c854-4f63-81ed-92664858b600")
+		(property "Reference" "#PWR025"
+			(at 129.54 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 129.54 151.0721 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "IX4310T"
-			(at 76.2 130.4868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-			(at 76.2 152.4 0)
+		(property "Footprint" ""
+			(at 129.54 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3157,7 +2807,205 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 139.7 0)
+			(at 129.54 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 129.54 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a43cf6ce-910c-4c9f-91cd-439eb700674d")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 129.54 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8719e959-7cab-452a-bfdd-0d716e5ca28e")
+		(property "Reference" "#PWR022"
+			(at 129.54 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 129.54 107.8921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48af067e-47a0-4ec2-8dd9-e38f712a9704")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 152.4 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f9f7557-e4d4-45f6-a32b-54dbf7ee39d7")
+		(property "Reference" "#PWR026"
+			(at 152.4 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 152.4 151.0721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 152.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7f45e49-c1db-42ec-b4b7-d9cfc8a23592")
+		)
+		(instances
+			(project "heater-controller"
+				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "passives:d_tvs_bidi")
+		(at 152.4 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9be20b86-9e87-4e0c-ae95-ef3db0c8abdc")
+		(property "Reference" "TVS4"
+			(at 154.1272 95.3516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "64V"
+			(at 154.1272 97.663 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 152.4 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3166,33 +3014,23 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 139.7 0)
+			(at 152.4 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "b71a86cc-5296-48d8-b01d-f57c05fb8ba2")
-		)
-		(pin "3"
-			(uuid "78f78d86-fa3f-456f-9e12-9600e654087d")
-		)
-		(pin "5"
-			(uuid "cd4acd3c-1d82-4d70-8329-cd6cb4313219")
-		)
-		(pin "4"
-			(uuid "6953a929-ab11-44fa-93d2-6f099a869659")
-		)
 		(pin "1"
-			(uuid "6f36c8e9-83f2-493b-a3d0-8abe0503f333")
+			(uuid "3d1b4d63-100e-4a60-a64e-a0e34de4fed9")
+		)
+		(pin "2"
+			(uuid "2aebe357-8bd0-4d4b-9242-63b50c7cc5e2")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "U7")
+					(reference "TVS4")
 					(unit 1)
 				)
 			)
@@ -3200,350 +3038,16 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 63.5 60.96 0)
+		(at 152.4 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8197ac66-0f56-442a-b98e-63e8e93c407e")
-		(property "Reference" "#PWR08"
-			(at 63.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 63.5 64.7121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 63.5 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32fa209d-00ae-464b-a4aa-8d8705b8ef25")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 50.8 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8654541d-1634-49c4-ac8e-ca4bb33d89bb")
-		(property "Reference" "#PWR029"
-			(at 50.8 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 50.8 120.3269 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 50.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b06cb221-5c17-4ebc-bc60-c1760354bbc0")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 50.8 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88217307-9612-46f7-a3f7-d49072034f40")
-		(property "Reference" "C7"
-			(at 53.1241 128.3341 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 53.1241 130.7584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 50.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 50.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9a7baaaf-c402-4455-8c1e-da8279a867ce")
-		)
-		(pin "2"
-			(uuid "d96c7e7f-9f5a-48dc-b818-918db4b14102")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 63.5 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e52f529-a3dc-41a1-b0b4-d880c18578d2")
-		(property "Reference" "#PWR032"
-			(at 63.5 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 63.5 151.0721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 63.5 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f75c596-9aa7-4e93-9124-155fd907b0be")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 50.8 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b6c82ed-2ce6-442f-b77f-f5e4033ae0de")
-		(property "Reference" "#PWR09"
-			(at 50.8 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 50.8 33.9669 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a4a63516-b105-40a2-b641-d62bc844e771")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 50.8 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b28817bc-ebdc-47a8-a6d7-8eb6425a1d8c")
+		(uuid "ba01ab4c-8bee-443a-a276-6b35a1d92623")
 		(property "Reference" "#PWR023"
-			(at 50.8 85.09 0)
+			(at 152.4 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3551,8 +3055,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 50.8 77.1469 0)
+		(property "Value" "PGND"
+			(at 152.4 107.8921 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3560,7 +3064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 81.28 0)
+			(at 152.4 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3569,7 +3073,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 81.28 0)
+			(at 152.4 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3577,8 +3081,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 50.8 81.28 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 152.4 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +3091,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4aaa9a8-a9e8-4c86-858e-4e8f56665ff2")
+			(uuid "39f21471-b110-40bc-a46e-207114c724a0")
 		)
 		(instances
 			(project "heater-controller"
@@ -3599,76 +3103,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 53.34 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba21df2a-8b52-4fc3-bc44-16b5f1200d95")
-		(property "Reference" "R18"
-			(at 54.8386 141.0716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 54.8386 143.383 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 53.34 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3aee402c-03bf-4a7f-8aa1-6cc4e88b7f7d")
-		)
-		(pin "2"
-			(uuid "4273e0ff-8388-4cfe-afa1-a83a01e1b343")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 119.38 40.64 0)
+		(at 129.54 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3676,7 +3112,7 @@
 		(dnp no)
 		(uuid "c52f3da4-4586-403d-aa29-54b7a95411c7")
 		(property "Reference" "H8"
-			(at 121.92 38.1 0)
+			(at 132.08 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +3121,7 @@
 			)
 		)
 		(property "Value" "M4"
-			(at 121.92 40.64 0)
+			(at 132.08 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,8 +3129,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_Pad_Via"
-			(at 119.38 40.64 0)
+		(property "Footprint" "connectors:KEYS_7798"
+			(at 129.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3703,7 +3139,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 40.64 0)
+			(at 129.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3712,7 +3148,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 40.64 0)
+			(at 129.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,74 +3169,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 50.8 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c62b6973-aaac-433a-8cc5-147cc3715ff1")
-		(property "Reference" "#PWR021"
-			(at 50.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 50.8 49.4721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 50.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b71ec77c-6784-4563-b20c-dbcfe4ded4da")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 119.38 127 0)
+		(at 129.54 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3808,7 +3178,7 @@
 		(dnp no)
 		(uuid "c773e212-d021-4406-816f-397f885d8800")
 		(property "Reference" "H10"
-			(at 121.92 124.46 0)
+			(at 132.08 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3817,7 +3187,7 @@
 			)
 		)
 		(property "Value" "M4"
-			(at 121.92 127 0)
+			(at 132.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,8 +3195,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_Pad_Via"
-			(at 119.38 127 0)
+		(property "Footprint" "connectors:KEYS_7798"
+			(at 129.54 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3835,7 +3205,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 127 0)
+			(at 129.54 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3844,7 +3214,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 127 0)
+			(at 129.54 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,17 +3235,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 50.8 43.18 0)
+		(lib_id "Device:R_Small")
+		(at 93.98 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8240614-1a2a-4d20-9a35-4fa5a624a376")
-		(property "Reference" "C1"
-			(at 53.1241 41.9741 0)
+		(uuid "c878d137-2d5d-4ef6-b090-1d7bdd95b816")
+		(property "Reference" "R17"
+			(at 95.4786 52.1716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3883,8 +3252,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 53.1241 44.3984 0)
+		(property "Value" "10k"
+			(at 95.4786 54.483 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3892,8 +3261,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 50.8 43.18 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 93.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +3271,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 43.18 0)
+			(at 93.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,25 +3279,24 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 50.8 43.18 0)
+		(property "Description" ""
+			(at 93.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "5d22b0c3-610b-4d67-ab38-09bf7e4419f1")
+			(uuid "3363aaa7-fdb2-40ad-984d-090a2d97ed19")
 		)
 		(pin "2"
-			(uuid "27e26c7a-39c0-4674-8763-2c58c40d400e")
+			(uuid "a9e608dd-553a-4f5e-b765-7bad45e16c40")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "C1")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3936,16 +3304,16 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 50.8 88.9 0)
+		(at 111.76 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ccf32d41-904b-4bac-8e80-7989ad0ed05d")
-		(property "Reference" "#PWR024"
-			(at 50.8 95.25 0)
+		(uuid "cda5755e-6a27-46db-b124-e53f07adf404")
+		(property "Reference" "#PWR021"
+			(at 111.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3953,8 +3321,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 50.8 92.6521 0)
+		(property "Value" "PGND"
+			(at 111.76 107.8921 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3962,7 +3330,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 88.9 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3971,7 +3339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 88.9 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3980,7 +3348,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 50.8 88.9 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3989,12 +3357,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "78fd44e1-0f01-4bcc-97f7-3ca2b9d08520")
+			(uuid "a6bb04a8-74e2-4b97-ad2f-1311f7c82f27")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR024")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -4002,7 +3370,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IPT015N10N5")
-		(at 116.84 99.06 0)
+		(at 127 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4010,7 +3378,7 @@
 		(dnp no)
 		(uuid "d1bb85c4-8c26-4d7a-b032-1ac906e6c6d2")
 		(property "Reference" "Q12"
-			(at 121.92 99.06 0)
+			(at 132.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4019,7 +3387,7 @@
 			)
 		)
 		(property "Value" "80V/790uR"
-			(at 121.92 101.6 0)
+			(at 132.08 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4028,7 +3396,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 121.92 100.965 0)
+			(at 132.08 100.965 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +3407,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-IPT015N10N5-DS-v02_01-EN.pdf?fileId=5546d4624a75e5f1014ac94680661aff"
-			(at 116.84 99.06 0)
+			(at 127 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4049,7 +3417,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 99.06 0)
+			(at 127 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,74 +3443,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 101.6 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2b8c401-4e51-4c4c-aae4-2de589e753a6")
-		(property "Reference" "#PWR033"
-			(at 101.6 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 101.6 151.0721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 101.6 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d84d7664-c459-4e07-8368-1cf1a955186a")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 119.38 83.82 0)
+		(at 129.54 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4150,7 +3452,7 @@
 		(dnp no)
 		(uuid "e1dff3e5-ecbc-4dbc-a3e2-5e420ffa1a00")
 		(property "Reference" "H9"
-			(at 121.92 81.28 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4159,7 +3461,7 @@
 			)
 		)
 		(property "Value" "M4"
-			(at 121.92 83.82 0)
+			(at 132.08 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4167,8 +3469,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_Pad_Via"
-			(at 119.38 83.82 0)
+		(property "Footprint" "connectors:KEYS_7798"
+			(at 129.54 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4177,7 +3479,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 83.82 0)
+			(at 129.54 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4186,7 +3488,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 83.82 0)
+			(at 129.54 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4207,149 +3509,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 119.38 60.96 0)
+		(lib_id "Device:R_Small")
+		(at 94.0089 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ede6084b-5fcf-443a-a463-5f334a79efb2")
-		(property "Reference" "#PWR017"
-			(at 119.38 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 119.38 64.7121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 119.38 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82056896-c1d6-4751-99fa-c82b25637832")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 53.34 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6fc99c2-5727-4db6-aaab-34262562cb96")
-		(property "Reference" "#PWR022"
-			(at 53.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 53.34 64.7121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 53.34 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e91c6fdf-7ee6-403a-ad0f-c646c17feedd")
-		)
-		(instances
-			(project "heater-controller"
-				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 50.8 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9a5fbc6-e021-4b82-877f-f3084eba133d")
-		(property "Reference" "C6"
-			(at 53.1241 85.1541 0)
+		(uuid "f7daf74e-b693-4ea5-8315-9816f3ca9a92")
+		(property "Reference" "R19"
+			(at 95.5075 138.5316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4357,8 +3526,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 53.1241 87.5784 0)
+		(property "Value" "10k"
+			(at 95.5075 140.843 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,8 +3535,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 50.8 86.36 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 94.0089 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +3545,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 86.36 0)
+			(at 94.0089 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,25 +3553,24 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 50.8 86.36 0)
+		(property "Description" ""
+			(at 94.0089 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "c2d3a82f-6d2c-4749-8c14-3beccf6b1a26")
+			(uuid "2546e614-635f-4fc5-8b7e-64532fa1684a")
 		)
 		(pin "2"
-			(uuid "79fac87a-8765-4ee5-b59f-18fde01820e0")
+			(uuid "39a5a753-54c9-46c1-ab89-4b3c7e0a7659")
 		)
 		(instances
 			(project "heater-controller"
 				(path "/ff68c860-b4e8-4d8a-b50c-f04384190302/ad28b465-172d-4275-bd74-a17b8fed4af3"
-					(reference "C6")
+					(reference "R19")
 					(unit 1)
 				)
 			)

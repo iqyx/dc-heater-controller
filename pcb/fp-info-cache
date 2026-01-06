@@ -1,4 +1,4 @@
-25817691765153036
+25824750218785050
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102858,6 +102858,13 @@ JST-UBAL-4R-D14-4S
 6
 5
 connectors
+KEYS_7798
+
+
+0
+6
+1
+connectors
 LCD_ERC240160
 
 
@@ -102927,6 +102934,13 @@ MOLEX-217182
 0
 20
 17
+connectors
+PC-6-16-2
+
+
+0
+6
+2
 connectors
 PTSA-0.5-4-2.5-Z
 
@@ -103242,6 +103256,20 @@ SSR_S202T02
 0
 4
 4
+ic
+ST_HPAK
+
+
+0
+7
+7
+ic
+ST_PowerSSO-36_3EP
+ST PowerSSO-36 1EP 7.5x10.3mm Pitch 0.8mm [JEDEC MO-271] (http://www.st.com/resource/en/datasheet/tda7492p.pdf, http://freedatasheets.com/downloads/Technical%20Note%20Powersso24%20TN0054.pdf)
+ST PowerSSO-36 1EP 7.5x10.3mm Pitch 0.8mm
+0
+39
+39
 ic
 TDFN-12_3x3mm_P0.5mm_EP1.7x2.5mm
 
